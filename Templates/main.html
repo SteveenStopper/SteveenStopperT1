@@ -66,7 +66,8 @@
     <div class="gp-widget-title" style= "font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> <!-- Estilos para la etiqueta -->
         <h3 class="widgettitle">Destacados</h3>
         </div> <!-- Fin de etiqueta -->
-    <div>
+
+    <div style="page-break-inside: auto;"> <!-- Inicio de carrusel -->
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -92,8 +93,37 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span> <!-- Para el uso del boton siguiente -->
             </button>
-          </div></center>
+          </div></center><br>
     </div>
+    <div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Halo-4</h5>
+    
+                <center><img src="{{url_for('static', filename='Imagenes/Halo-4.jpg')}}" width="600px" height="300px"></center>
+                <br><p class="card-text">$45.85</p>
+                <a href="https://pivigames.blog/halo-the-master-chief-collection-pc-espanol/" class="btn btn-primary">Pre-Compra</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Aliens-FireTeam Elite</h5>
+    
+                <center><img src="{{url_for('static', filename='Imagenes/Aliens.jpg')}}" width="600px" height="300px"></center>
+    
+                <br><p class="card-text">$50.99</p>
+    
+                <a href="https://pivigames.blog/al13ns-firet3am-elite-deluxe-edition-pc-espanol/" class="btn btn-primary">Pre-Compra</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 </body>
 </html>
 <!-- Paquete JavaScript con Popper -->
