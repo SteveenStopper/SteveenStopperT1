@@ -7,7 +7,7 @@ app = Flask(__name__, template_folder= 'templates')
 
 #ruta - Página principal
 @app.route('/')
-def pag_principal():
+def principal():
     return render_template('main.html')
 
 
