@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alex Shop</title>
+    <title>Inicio - Alex Shop</title>
     <!-- Solo CSS -->
     <!-- Con el siguiente link exportamos los estilos de boostrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -50,15 +50,49 @@
           </nav>
     </div> <!-- Fin del navbar -->
 
-    <div style="text-align: center;">
-        <blockquote cite='http://html.conclase.net/w3c/html401...def-BLOCKQUOTE'>
-            <p>
-              <strong>Acceso instantáneo a la inversión, en cualquier momento y en cualquier lugar</strong> <br>
-             <div> Invertir nunca ha sido tan fácil. Todo lo que buscas en una plataforma de inversión definitiva — en el dispositivo de tu elección. <br>
-              El 'trading' consiste en la compraventa de activos cotizados con mucha liquidez de mercado (acciones, divisas y futuros). Y ese mercado financiero es electrónico 
-              y está regulado. Su objetivo es obtener un beneficio económico cuando la operación genera una plusvalía.</div>
+    <div style="text-align: center;"> <!-- Inicio del bloque -->
+        <blockquote>
+            <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> <!-- Estilo para la etiqueta del bloque p -->
+              <strong>Alex Shop/Tienda de Video Juegos </strong> <br>
+             <div> Queremos que sepa que no tenemos ningún contenido ilegal o protegido por derechos de autor en Alex Shop. 
+                 La información de archivo que alojamos no tiene archivos que puedan tener derechos de autor. Estamos en 
+                 correspondencia con la Ley de derechos de autor del milenio digital ("DMCA") y las leyes internacionales 
+                 generales de derechos de autor. Sin embargo, aún podemos eliminar la publicación de nuestro sitio si el 
+                 propietario de los derechos de autor desea que lo hagamos.</div>
             </p>
           </blockquote>
+    </div> <!-- Fin del bloque -->
+
+    <div class="gp-widget-title" style= "font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> <!-- Estilos para la etiqueta -->
+        <h3 class="widgettitle">Destacados</h3>
+        </div> <!-- Fin de etiqueta -->
+    <div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner"><center>
+              <div class="carousel-item active"> 
+                <img src="{{url_for('static', filename='Imagenes/fifa-22.jpg')}}" class="d-block w-75" alt="..." height="600px"> <!-- Colocaremos las imagenes de forma static -->
+              </div>
+              <div class="carousel-item">
+                <img src="{{url_for('static', filename='Imagenes/far-cry-6.jpg')}}" class="d-block w-75" alt="..." height="600px"> <!-- Colocaremos las imagenes de forma static -->
+              </div>
+              <div class="carousel-item">
+                <img src="{{url_for('static', filename='Imagenes/Forza-Horizon-5.jpg')}}" class="d-block w-75" alt="..." height="600px"> <!-- Colocaremos las imagenes de forma static -->
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span> 
+              <span class="visually-hidden">Previous</span> <!-- Para el uso del boton anterior -->
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span> <!-- Para el uso del boton siguiente -->
+            </button>
+          </div></center>
     </div>
 </body>
 </html>
